@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*Colors*/
+    --red: #A15252;
+    --gray: #D9D9D9;
+
+    /*Lengths*/
+    --btnheight: 15vh;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.nav-bar{
+    width: 77vw;
+    height: var(--btnheight);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-h1, .nav-btn{
+    height: var(--btnheight);
+    background-color: var(--gray);
+    text-align: center;
+    line-height: var(--btnheight);
+}
+
+.nav-btn:hover{
+    background-color: white;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.nav-h1{
+    width: 40vw;
+}
+
+.nav-btn{
+    display: block;
+    width: 17vw;
+    transition: 0.2s;
+}
+
+
+.nav-cont, .container{
+    width: 80vw;
+    margin: auto;
+    background-color: var(--red);
+}
+
+.nav-cont{
+    height: 15vh;
+    padding: 3vh 0 0 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-cont{
+    height: 93%;
+    width: 77vw;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 50vw;
+    height: 60%;
+}
+
+.form-btn{
+    width: 50vw;
+    height: 15%;
+    box-sizing: border-box;
+}
+
+.pass-cont{
+    width: 50vw;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass-btn{
+    width: 25vw;
+}

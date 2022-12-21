@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        body{background-color: hsl(0, 0%, 70%);}
+        .info-img{width: 10vh; height: 10vh; border: black solid 2px;}
+        .info-text{font-size: 4vh; margin: 1vh;}
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <%- include('navbar.ejs'); -%>
+    <script> document.querySelector('#nav-home').classList.add("active"); </script>
+
+    <div class="d-flex row justify-content-center align-items-center">
+        <img src=<%= (locals.pfp) ? pfp : "./anon.jpeg" %> alt="Profile Picture" class="info-img">
+        <div class="d-flex flex-column">
+            <h3 class="info-text"><%= (locals.username) ? username : "Username" %></h3>
+            <h3 class="info-text"><%= (locals.name) ? name : "Name" %></h3>
+        </div>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center flex-column align-items-center h-100">
+            <h1 class="mb-3">Account List</h1>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
